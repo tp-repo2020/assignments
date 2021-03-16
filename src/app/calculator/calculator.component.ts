@@ -6,14 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./calculator.component.css']
 })
 export class CalculatorComponent implements OnInit {
-  
+  result:number;
   constructor() { }
 
   ngOnInit(): void {
   }
 
   calculate(form){
-    console.log('form  --> ', form);
     let obj = {
       // calculating IDV
       calculateIDV : function(){
@@ -29,8 +28,7 @@ export class CalculatorComponent implements OnInit {
         return premiumAmount;
     }
     };
-
-    console.log(obj.odPremium());
+    this.result = obj.odPremium();
   }
 
   

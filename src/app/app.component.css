@@ -1,0 +1,23 @@
+.menu{
+    border-right: 1px solid black;
+    height: 90vh;
+    background: cornflowerblue;
+    border-top: 1px solid #fff;
+
+}
+
+.main-menu{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.main-menu li{
+    list-style: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    outline: none;
+    color: #fff;
+    font-weight: 600;
+    border-bottom: 1px solid #fff;
+}

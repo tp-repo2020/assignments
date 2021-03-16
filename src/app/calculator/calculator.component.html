@@ -1,0 +1,42 @@
+<div class="row">
+    <div class="col-12">
+        <h2>Issurance Premium Calculator</h2>
+
+        <form (ngSubmit)="calculate(f.value)" #f="ngForm" novalidate>
+            <div>
+                <label for="price1">Enter show room price of car </label>
+                    <input type="number" name="showRoomPrice" ngModel placeholder="Enter price" />
+            </div>
+
+            <div>
+                <label for="price2">Cost of accessories </label>
+                <input type="number" name="costOfAccessories" ngModel placeholder="Enter cost" />
+            </div>
+
+            <div>
+                <label for="depreciation">Depreciation value as per (IRDAI) </label>
+                <input type="number" name="depreciation" ngModel="3" placeholder="3%"/>
+            </div>
+
+            <div>
+                <label for="premium">Premium Rate (decided by insurer) </label>
+                <input type="number" name="premiumRate" ngModel="10" placeholder="10%"/>
+            </div>
+
+            <div>
+                <label for="Add-Ons">Add-Ons (eg. bonus coverage) </label>
+                <input type="number" name="addOns" ngModel value=""/>
+            </div>
+
+            <div>
+                <label for="dis&benefit">Discount & benefits (no claim bonus, theft discount, etc.) </label>
+                <input type="number" name="disBenifit" ngModel value=""/>
+            </div>
+
+            <div>
+                <button id="calculate" type="submit">Calculate Premium</button>
+            </div>
+
+        </form>
+    </div>
+</div>
